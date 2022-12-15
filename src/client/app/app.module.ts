@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 
+import { ButtonModule } from 'primeng/button';
+import { SidebarModule } from 'primeng/sidebar';
+
 import { AppComponent } from './app.component';
 import { ChatComponent } from './components/chat/chat.component';
 import { AccountComponent } from './components/account/account.component';
@@ -18,12 +21,13 @@ const appRoutes: Routes = [
     AppComponent,
     ChatComponent,
     AccountComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    SidebarModule
   ],
   exports: [
     RouterModule

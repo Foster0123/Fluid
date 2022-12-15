@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./chat.component.scss']
 })
 export class ChatComponent {
-
+  display = false;
+  displayNavbar(){
+    if(this.display){
+      this.display = false;
+    }
+    else {
+      this.display = true;
+    }
+  }
 }

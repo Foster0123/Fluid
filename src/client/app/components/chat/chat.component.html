@@ -1,5 +1,23 @@
-<div>
-   <aside class="sidebar">
-        sidebar
-   </aside>
+<div class="chat-container">
+    <aside class="sidebar bg-zinc-200">
+        <ul class="sidebar-list">
+            <li class="chat-header">
+                <h1 class="sidebar-title text-2xl">
+                    <i id="chat-icon-left" class="bi bi-chat-fill"></i>
+                    <p>Chats</p>
+                    <i id="chat-icon-right" class="bi bi-chat-fill"></i>
+                </h1>
+            </li>
+            <li class="chat-item" *ngFor="let chat of chats;">
+                <i class="chat-profile bi bi-person-circle"></i>
+                <section class="sidebar-chat-user-detail">
+                    <strong>{{ chat.uname }}</strong>
+                    <p>{{ chat.status }}</p>
+                </section>
+            </li>
+        </ul>
+    </aside>
+    <section class="chat-section">
+        <h1>Start Chatting<i class="bi bi-send"></i></h1>
+    </section>
 </div>

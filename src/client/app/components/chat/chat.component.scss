@@ -1,19 +1,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&display=swap');
 
 $open-sans:'Open Sans', sans-serif;
 
 :host {
-    --color: rgb(124, 66, 24);
-    --chat-bg-color:grey;
+    --sidebar-title-color: #5a5f64;
+    --chat-sidebar-bg-color:#2e3138;
+    --chat-section-bg-color:#2e3138;
+    --chat-item-bg-color:#555152a9;
+    --webkit-scrollbar-track-bg-color:grey;
+    --webkit-scrollbar-thumb-bg-color:silver;
+
+
 }
 .sidebar {
     border-radius: 5px;
     display: grid;
     grid-template-rows: 10% 90%;
     height: 90vh;
+    background-color: var(--chat-sidebar-bg-color);
     .sidebar-list {
         padding: 5px;
+        height: 90vh;
         color: whitesmoke;
+        overflow-y: scroll;
+        position: relative;
+        scrollbar-width: thin;
+        scrollbar-color: silver;
+        &::-webkit-scrollbar {
+            width: 5px;
+            border-radius: 10px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: var(--webkit-scrollbar-thumb-bg-color);
+            border-radius: 10px;
+        }
+        &::-webkit-scrollbar-track {
+            border-radius: 10px;
+            background-color: var(--webkit-scrollbar-track-bg-color);
+        }
     }
 
     .sidebar-title {
@@ -21,7 +46,7 @@ $open-sans:'Open Sans', sans-serif;
         display: flex;
         align-items: flex-start;
         justify-content: space-around;
-        background-color: var(--color);
+        background-color: var(--sidebar-title-color);
         border-radius: 5px;
         img {
             width: 30px;
@@ -46,9 +71,21 @@ $open-sans:'Open Sans', sans-serif;
 }
 .chat-header {
     text-align: center;
+    position: sticky;
+    top: 5px;
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+    #chat-icon-left, #chat-icon-right {
+        background: linear-gradient(45deg, indigo, yellow);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
 }
 .chat-section {
-    background-color: var(--chat-bg-color);
+    background-color: var(--chat-section-bg-color);
+    color: whitesmoke;
     border-radius: 5px;
     font-size: 3em;
     font-family: $open-sans;
@@ -62,15 +99,23 @@ $open-sans:'Open Sans', sans-serif;
     display: flex;
     align-items: center;
     padding: 5px;
-    background: grey;
+    background-color: var(--chat-item-bg-color);
     margin-bottom: 5px;
     border-radius: 5px;
     color: inherit;
-    .chat-profile {
-        color: black;
-        font-size: 2.5em;
+    justify-content: space-between;
+    .chat-profile-pic {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-right: 10px;
+        border: 1px solid silver;
     }
     .sidebar-chat-user-detail {
+        strong {
+            font-family: 'Lato', sans-serif;
+        }
         p {
             color: white;
             margin: 0;
@@ -78,4 +123,20 @@ $open-sans:'Open Sans', sans-serif;
             padding: 0;
         }
     }
+    .chat-item-menu {
+        text-align: right;
+        i {
+            font-size: 1.3em;
+        }
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    .chat-container {
+        grid-template-columns: 2fr 4fr;
+    }
+}
+
+@media only screen and (max-width: 800px){
+
 }

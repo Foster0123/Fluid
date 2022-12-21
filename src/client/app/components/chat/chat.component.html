@@ -9,11 +9,16 @@
                 </h1>
             </li>
             <li class="chat-item" *ngFor="let chat of chats;">
-                <i class="chat-profile bi bi-person-circle"></i>
-                <section class="sidebar-chat-user-detail">
-                    <strong>{{ chat.uname }}</strong>
-                    <p>{{ chat.status }}</p>
-                </section>
+                <a href="/chat/#" style="display: flex;">
+                    <img class="chat-profile-pic" src="{{ chat.profile }}" alt="Chat Profile Picture" />
+                    <section class="sidebar-chat-user-detail">
+                        <strong>{{ chat.uname }}</strong>
+                        <p>{{ chat.status }}</p>
+                    </section>
+                </a>
+                <button class="chat-item-menu">
+                    <i class="bi bi-three-dots-vertical"></i>
+                </button>
             </li>
         </ul>
     </aside>

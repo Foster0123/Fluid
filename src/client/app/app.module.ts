@@ -7,6 +7,8 @@ import { ChatComponent } from './components/chat/chat.component';
 import { AccountComponent } from './components/account/account.component';
 import { HomeComponent } from './components/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SigninComponent } from './components/signin/signin.component';
+import { SignupComponent } from './components/signup/signup.component';
 
 const appRoutes: Routes = [
   {path: "", component:HomeComponent},
@@ -20,6 +22,8 @@ const appRoutes: Routes = [
     ChatComponent,
     AccountComponent,
     HomeComponent,
+    SigninComponent,
+    SignupComponent,
   ],
   imports: [
     BrowserModule,

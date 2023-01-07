@@ -8,16 +8,15 @@
 .navbar-header-section {
     display: flex;
     align-items: center;
-    #sidebar {
-        font-size: 1.5em;
-    }
-    h1 {
+
+    a {
         display: flex;
         justify-content: center;
         align-items: center;
 
         header {
             font-size: 1.5em;
+            margin: 10px 0;
         }
 
         img {
@@ -26,25 +25,52 @@
     }
 }
 
+.navbar-links-section {
+    display: flex;
+    justify-content: space-between;
+}
+
 .navlink-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin-right: 60px;
+    margin-right: 110px;
 }
 
 .navbar-button-section {
     position: absolute;
-    top: 28px;
+    top: 50%;
     right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transform: translate(-50%, -50%);
 
     #profile-pic {
+        margin-right: 5px;
         border-radius: 10px;
         font-size: 2em;
         cursor: pointer;
+
         &:hover {
             transition: background-color, border 200ms ease-in-out;
+        }
+    }
+
+    .nav-menu {
+        display: none;
+
+        i {
+            height: 30px;
+            width: 35px;
+            font-size: 2em;
+            border-radius: 5px;
+            padding: 0 5px 0 5px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.5);
+            }
         }
     }
 }
@@ -71,15 +97,47 @@
         }
     }
 }
-@media only screen and (max-width: 700px){
+
+@media only screen and (max-width: 700px) {
     .fluid-navbar {
         flex-direction: column;
+        align-items: center;
     }
+
     .navbar-header-section {
+        width: 95%;
+        height: 100%;
+    }
+
+    .navbar-button-section {
+        top: 28.5px;
+        right: -25px;
+
+        .nav-menu {
+            display: inline-block;
+        }
+    }
+
+    .navbar-links-section {
+        display: none;
         width: 100%;
     }
+
     .navlink-container {
         flex-direction: column;
         margin-right: 0;
+        width: inherit;
+    }
+
+    .navlink {
+        width: 95%;
+
+        a {
+            justify-content: center;
+        }
+    }
+
+    .display-navbar {
+        display: flex !important;
     }
 }

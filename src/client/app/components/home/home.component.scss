@@ -25,21 +25,24 @@
     }
 
     .index-page-image {
-       border-radius:50%;
+        border-radius: 50%;
     }
+
     .logo-image-container {
         grid-area: image;
         display: flex;
         justify-content: center;
     }
 }
+
 .get-started-button-container {
     grid-area: button;
     display: flex;
     justify-content: center;
 }
+
 .index-page-get-started-button {
-    
+
     text-align: center;
     background-color: silver;
     padding: 10px;
@@ -51,6 +54,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
         p {
             margin-right: 10px;
         }
@@ -60,10 +64,20 @@
 @media only screen and (max-width: 1000px) {
     .fluid-index-page {
         grid-template-areas:
-        "header header header"
-        "image image image"
-        "button button button";
+            "header header header"
+            "image image image"
+            "button button button";
         grid-template-columns: 1fr;
         grid-template-rows: 0.5fr 1fr 0.5fr;
+
+        .index-page-header {
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1rem;
+            }
+        }
     }
 }

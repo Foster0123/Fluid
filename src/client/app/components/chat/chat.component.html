@@ -1,7 +1,7 @@
 <div class="chat-container">
     <aside class="sidebar bg-zinc-200">
         <ul class="sidebar-list">
-            <li class="chat-header">
+            <li class="chat-header" style="z-index: 5;">
                 <h1 class="sidebar-title text-2xl">
                     <i id="chat-icon-left" class="bi bi-chat-fill"></i>
                     <p>Chats</p>
@@ -9,6 +9,9 @@
                 </h1>
             </li>
             <li class="chat-item" *ngFor="let chat of chats;">
+                <div class="chat-item-menu-section" [ngClass]="this.chats[chat.id].showMenu ? 'show-chat-item-menu' : ''">
+                    <h2>Menu</h2>
+                </div>
                 <a href="/chat/#" style="display: flex;">
                     <img class="chat-profile-pic" src="{{ chat.profile }}" alt="Chat Profile Picture" />
                     <section class="sidebar-chat-user-detail">
@@ -16,7 +19,7 @@
                         <p>{{ chat.status }}</p>
                     </section>
                 </a>
-                <button class="chat-item-menu">
+                <button class="chat-item-menu" id="{{ chat.id }}" (click)="toggleItemMenu($event.currentTarget)">
                     <i class="bi bi-three-dots-vertical"></i>
                 </button>
             </li>

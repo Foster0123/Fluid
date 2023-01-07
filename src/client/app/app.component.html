@@ -1,11 +1,11 @@
 <nav class="fluid-navbar bg-zinc-700 text-white">
 	<div class="navbar-header-section">
-		<h1 class="app-title">
+		<a class="app-title" href="/">
 			<img src="./assets/images/fluid.svg" alt="Fluid Logo" />
 			<header class="title-text">Fluid</header>
-		</h1>
+		</a>
 	</div>
-	<div class="navbar-links-section">
+	<div class="navbar-links-section" id="navlink-section">
 		<ul class="navlink-container">
 			<li class="navlink nav-item-1">
 				<a href="#">
@@ -37,6 +37,9 @@
 		<span class="user-icon">
 			<a href="/account"><img id="profile-pic" src="./assets/images/user.svg" alt="Profile Picture On Navbar"></a>
 		</span>
+		<div class="nav-menu">
+			<i id="nav-menu" class="bi bi-list" (click)="showNavbar()"></i>
+		</div>
 	</div>
 </nav>
 <router-outlet></router-outlet>

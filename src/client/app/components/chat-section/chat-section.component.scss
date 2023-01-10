@@ -1,20 +1,52 @@
 @use './modules/scss/chat-section';
 
 :host {
-    --bg-color:"";
+    --bg-color:rgba(75, 75, 75, 0.322);
     --current-msg-color: "";
     --other-msg-color: "";
     --app-msg-color: "";
     --input-bg-color: "";
-    --chat-navbar-color: rgba(0,0,0,0.2);
+    --chat-navbar-color: rgba(192, 175, 175, 0.904);
 }
-.chat-container {
-   
+.chat-navbar {
+    background-color: var( --chat-navbar-color);
+   height: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+    span {
+        i {
+            color: whitesmoke;
+            font-size: 1.6em;
+            border-radius: 5px;
+            cursor: pointer;
+            &:hover {
+                background-color: var(--bg-color);
+            }
+        }
+    }
+    #chat-nav-back {
+        margin: 0 0 0 10px;
+    }
+    #chat-nav-menu {
+        margin: 0 10px 0 0;
+    }
+}
+.chat-intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    #chat-intro-image {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
 }
 .nav-user-section {
     display: flex;
     justify-content: center;
-    background-color: wheat;
     padding: 5px 0;
     align-items: center;
     img {

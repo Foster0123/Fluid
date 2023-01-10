@@ -10,11 +10,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SigninComponent } from './components/signin/signin.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ChatSectionComponent } from './components/chat-section/chat-section.component';
 
 const appRoutes: Routes = [
   {path: "", component:HomeComponent},
   {path: "chat", component: ChatComponent},
-  {path: "account", component: AccountComponent}
+  {path: "account", component: AccountComponent},
+  {path: "signin", component: SigninComponent},
+  {path: "signup", component: SignupComponent},
+  {path: "chat/chat-section", component: ChatSectionComponent},
 ];
 
 @NgModule({
@@ -25,6 +29,7 @@ const appRoutes: Routes = [
     HomeComponent,
     SigninComponent,
     SignupComponent,
+    ChatSectionComponent,
   ],
   imports: [
     BrowserModule,

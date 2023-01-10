@@ -1,0 +1,33 @@
+.chat-interactive-container {
+    padding: 10px;
+    list-style: none;
+    color: white;
+    background: indigo;
+}
+.chat-interactive-container li p {
+    padding: 5px 0;
+    background-color: navy;
+    padding: 5px;
+    margin: 2.5px 0;
+    max-width: 60%;
+    
+}
+.your-msg {
+    border-radius: 10px 0 0 10px;
+}
+.your-msg-item {
+    display: flex;
+    justify-content: flex-end;
+}
+.their-msg {
+    border-radius: 0 10px 10px 0;
+}
+.their-msg-item {
+    display: flex;
+    justify-content: flex-start;
+}
+@media only screen and (max-width:400px){
+    .chat-interactive-container li p {
+        width: 90%;
+    }
+}

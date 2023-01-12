@@ -2,15 +2,21 @@
 
 :host {
     --bg-color:rgba(75, 75, 75, 0.322);
+    --chat-section-bg-scrollbar-color: silver;
     --current-msg-color: "";
     --other-msg-color: "";
     --app-msg-color: "";
     --input-bg-color: "";
     --chat-navbar-color: rgba(192, 175, 175, 0.904);
 }
+.chat-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .chat-navbar {
     background-color: var( --chat-navbar-color);
-   height: 100%;
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -32,6 +38,9 @@
         margin: 0 10px 0 0;
     }
 }
+.disabled {
+    visibility: hidden;
+}
 .chat-intro {
     display: flex;
     justify-content: center;
@@ -43,6 +52,7 @@
         height: 100px;
         border-radius: 50%;
         object-fit: cover;
+        margin: 10px 0;
     }
 }
 .nav-user-section {
@@ -54,7 +64,7 @@
         width: 40px;
         height: 40px;
         object-fit: cover;
-        border: 1px solid black;
+        border: 1px solid white;
         border-radius: 50%;
         margin: 0 5px 0 0;
         background-color: var(--chat-navbar-color);
@@ -62,6 +72,13 @@
     p {
         display: inline-block;
         font-size: small;
+        .active-status-dot {
+            font-size: small;
+            background: linear-gradient(45deg, lime,white 85%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+        }
     }
     .other-user-info {
         display: flex;

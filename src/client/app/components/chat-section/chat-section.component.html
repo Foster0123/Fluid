@@ -4,35 +4,72 @@
             <a href="/chat"><i class="bi bi-caret-left-fill" id="chat-nav-back"></i></a>
         </span>
         <div class="nav-user-section">
-            
-            <img src="./assets/images/blaze.png" alt="Other End User Profile Picture" />
+
+            <img class="navbar-other-pic" src="./assets/images/skull.jpg" alt="Other End User Profile Picture" />
             <div class="other-user-info">
-                <p class="name">Name Surname</p>
-                <p class="status">Active 1m Ago</p>
+                <p class="name">
+                    Name Surname</p>
+                <p class="status">
+                    <i class="fa-solid fa-circle active-status-dot"></i>
+                    Active 1m Ago
+                </p>
             </div>
         </div>
         <span>
             <i class="bi bi-three-dots-vertical" id="chat-nav-menu"></i>
         </span>
     </div>
-    <div class="chat-intro">
-        <img id="chat-intro-image" src="./assets/images/blaze.png" alt="Other End User Profile Picture">
-    </div>
     <ul class="chat-interactive-container">
-        <li class="your-msg-item">
-            <p class="your-msg">Message-1 This Is A Message</p><div class="triangle-right"></div>
+        <li class="chat-intro">
+            <img id="chat-intro-image" src="./assets/images/skull.jpg" alt="Other End User Profile Picture">
+            <h4 class="chat-intro-name">Name Surname</h4>
         </li>
         <li class="your-msg-item">
-            <p class="your-msg">Message-2 This Is A Prettyyyyyyyyy Long Message</p><div class="triangle-right"></div>
+            <p class="your-msg">Message-1 This Is A Message</p>
+            <div class="triangle-right"></div>
+        </li>
+        <li class="your-msg-item">
+            <p class="your-msg">Message-2 This Is A Prettyyyyyyyyy Long Message</p>
+            <div class="triangle-right"></div>
         </li>
         <li class="their-msg-item">
-            <div class="triangle-left"></div><p class="their-msg">Message-3 Short Msg</p>
+            <div class="triangle-left"></div>
+            <p class="their-msg">Message-3 Short Msg</p>
         </li>
         <li class="their-msg-item">
-            <div class="triangle-left"></div><p class="their-msg">Message-4 Mini Msg</p>
+            <div class="triangle-left"></div>
+            <p class="their-msg">Message-4 Mini Msg</p>
+        </li>
+        <li class="your-msg-item">
+            <p class="your-msg">Message-1 This Is A Message</p>
+            <div class="triangle-right"></div>
+        </li>
+        <li class="your-msg-item">
+            <p class="your-msg">Message-2 This Is A Prettyyyyyyyyy Long Message</p>
+            <div class="triangle-right"></div>
+        </li>
+        <li class="their-msg-item">
+            <div class="triangle-left"></div>
+            <p class="their-msg">Message-3 Short Msg</p>
+        </li>
+        <li class="your-msg-item">
+            <p class="your-msg">Message-1 This Is A Message</p>
+            <div class="triangle-right"></div>
+        </li>
+        <li class="your-msg-item">
+            <p class="your-msg">Message-2 This Is A Prettyyyyyyyyy Long Message</p>
+            <div class="triangle-right"></div>
+        </li>
+        <li class="their-msg-item">
+            <div class="triangle-left"></div>
+            <p class="their-msg">Message-3 Short Msg</p>
         </li>
     </ul>
     <div class="chat-interactive-section">
-        <input id="" class="message-input" type="text" name="messages" placeholder="Type Your Messages --->">
+        <textarea id="msg-input" class="message-input" type="text" name="messages" placeholder="Type Your Messages --->"
+            rows="1" spellcheck wrap="soft" contenteditable></textarea>
+        <span class="text-input-buttons">
+            <i class="fa-solid fa-paperclip file-upload-icon"></i>
+        </span>
     </div>
 </div>

@@ -17,11 +17,11 @@ $open-sans:'Open Sans', sans-serif;
     border-radius: 5px;
     display: grid;
     grid-template-rows: 10% 90%;
-    height: 90vh;
+    height: 100%;
     background-color: var(--chat-sidebar-bg-color);
     .sidebar-list {
         padding: 5px;
-        height: 90vh;
+        height: 100vh;
         color: whitesmoke;
         overflow-y: scroll;
         position: relative;
@@ -29,6 +29,7 @@ $open-sans:'Open Sans', sans-serif;
         scrollbar-color: silver;
         &::-webkit-scrollbar {
             width: 5px;
+            height: 100%;
             border-radius: 10px;
         }
         &::-webkit-scrollbar-thumb {

@@ -3,14 +3,23 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 5px 0;
+    background-color: rgba(102, 51, 153, 0.74);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
 }
 
 .navbar-header-section {
     display: flex;
     align-items: center;
-
     a {
+        color: white;
         display: flex;
+        text-decoration: none;
+        font-family: "Playfair Display";
         justify-content: center;
         align-items: center;
 
@@ -35,6 +44,7 @@
     justify-content: space-between;
     align-items: center;
     margin-right: 110px;
+    list-style-type: none;
 }
 
 .navbar-button-section {
@@ -78,7 +88,6 @@
 .navlink {
     margin: 5px 2.5px 5px 2.5px;
     border-radius: 100px;
-
     a {
         display: flex;
         align-items: center;
@@ -86,7 +95,10 @@
         padding: 10px 15px 10px 15px;
         transition: box-shadow, 150ms ease-in-out;
         font-size: 1.1em;
-
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: 'Roboto', monospace;
         i {
             margin-right: 5px;
         }
@@ -110,7 +122,7 @@
     }
 
     .navbar-button-section {
-        top: 28.5px;
+        top: 32px;
         right: -25px;
 
         .nav-menu {

@@ -85,9 +85,14 @@
     }
     .text-input-buttons {
         position: absolute;
-        left: 20px;
+        left: 23px;
         .file-upload-icon {
+            cursor: pointer;
+            background-color: lawngreen;
+            padding: 5px;
+            border-radius: 50%;
             color: white;
+            font-size: 1.3em;
         }
     }
 }

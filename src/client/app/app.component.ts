@@ -7,9 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = "Fluid"
-  showNavbar () {
-    const linkContainer = document.getElementById('navlink-section')
-    linkContainer?.classList.toggle('display-navbar')
-  }
-  
 }

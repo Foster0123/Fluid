@@ -18,10 +18,16 @@ $open-sans:'Open Sans', sans-serif;
 
 .chat-container {
     display: grid;
-    margin: 10px 5px;
+    margin: 0 5px;
     width: auto;
+    height: 100%;
+    grid-template-areas: 
+        "navbar navbar"
+        "chat-sidebar chat-section"
+    ;
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr 3fr;
-    column-gap: 5px;
+    grid-gap: 5px;
 }
 .chat-header {
     text-align: center;
@@ -34,7 +40,6 @@ $open-sans:'Open Sans', sans-serif;
         background: linear-gradient(45deg, indigo, yellow);
         background-clip: text;
         -webkit-text-fill-color: transparent;
-
     }
 }
 .chat-section {

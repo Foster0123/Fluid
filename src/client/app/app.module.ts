@@ -11,6 +11,7 @@ import { SigninComponent } from './components/signin/signin.component';
 import { SignupComponent } from './components/signup/signup.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ChatSectionComponent } from './components/chat-section/chat-section.component';
+import { ChatSidebarComponent } from './components/chat-sidebar/chat-sidebar.component';
 
 const appRoutes: Routes = [
   {path: "", component:HomeComponent},
@@ -30,6 +31,7 @@ const appRoutes: Routes = [
     SigninComponent,
     SignupComponent,
     ChatSectionComponent,
+    ChatSidebarComponent,
   ],
   imports: [
     BrowserModule,

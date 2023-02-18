@@ -1,95 +1,74 @@
-@use './modules/scss/chat-section';
+@use 'modules/_chat-bar';
+@use 'modules/_chat-menu';
+@use 'modules/_chat-section';
+@use 'modules/_chat-friend';
+@use 'modules/_chat-msg';
+@use 'modules/_chat-input';
 
 :host {
-    --bg-color:rgba(75, 75, 75, 0.322);
-    --chat-section-bg-scrollbar-color: silver;
-    --current-msg-color: "";
-    --other-msg-color: "";
-    --app-msg-color: "";
-    --input-bg-color: "";
-    --chat-navbar-color: rgba(192, 175, 175, 0.904);
+    --chat-ui-bg-color: purple;
+    --chat-ui-bg-color: rgba(255, 255, 255, 0.9);
+    --chat-scrollbar-bg-color: transparent;
+    --chat-scrollbar-thumb-bg-color: whitesmoke;
+    --your-msg-bg-color: green;
+    --their-msg-bg-color: teal;
+    --msg-text-color: white;
+    --app-msg-color: green;
+    --chat-accent-color: rgba(15, 54, 153, 0.4);
+    --status-dot-color:gold;
+    --chat-navbar-color: rgba(15, 54, 153, 0.4);
+    --msg-textbox-bg-color: rgba(0, 0, 0, 0.7);
+    --emoji-menu-bg-color:indigo;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    -webkit-font-smoothing: antialiased;
 }
 .chat-container {
-    height: 100%;
+    width: 100%;
+    background-color: var(--chat-ui-bg-color);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    background-image: url("/assets/images/background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    overflow-y:hidden;
+    height: 100vh;
+    position: relative;
+    border-radius: 10px;
 }
-.chat-navbar {
-    background-color: var( --chat-navbar-color);
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-    span {
-        i {
-            color: whitesmoke;
-            font-size: 1.6em;
-            border-radius: 5px;
-            cursor: pointer;
-            &:hover {
-                background-color: var(--bg-color);
+@media only screen and (max-width: 600px) {
+    .chat-text-msg-input {
+        max-height: 100px!important;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .chat-section-container {
+        li {
+            margin: 5px 0;
+            div {
+
+                max-width: 75%;
             }
         }
-    }
-    #chat-nav-back {
-        margin: 0 0 0 10px;
-    }
-    #chat-nav-menu {
-        margin: 0 10px 0 0;
+    } 
+}
+@media only screen and (max-width: 280px){
+    .chat-text-msg-input-placeholder {
+        font-size: 14px;
     }
 }
-.disabled {
-    visibility: hidden;
-}
-.chat-intro {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 30px 0;
-    #chat-intro-image {
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin: 10px 0;
-    }
-}
-.nav-user-section {
-    display: flex;
-    justify-content: center;
-    padding: 5px 0;
-    align-items: center;
-    img {
-        width: 40px;
-        height: 40px;
-        object-fit: cover;
-        border: 1px solid white;
-        border-radius: 50%;
-        margin: 0 5px 0 0;
-        background-color: var(--chat-navbar-color);
-    }
-    p {
-        display: inline-block;
-        font-size: small;
-        .active-status-dot {
-            font-size: small;
-            background: linear-gradient(45deg, lime,white 85%);
-            background-clip: text;
-            -webkit-text-fill-color: transparent;
 
-        }
-    }
-    .other-user-info {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: flex-start;
-        .name {
-            font-weight: bolder;
-        }   
-        .status {
-            font-weight: 500;
-        }
+@media (orientation: landscape){
+    .chat-text-msg-input {
+        max-height: 100px!important;
     }
 }

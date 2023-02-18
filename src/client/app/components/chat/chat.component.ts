@@ -54,43 +54,7 @@ export class ChatComponent {
       status: 'Active Now',
       profile: './assets/images/blaze.png',
       showMenu:false
-    },
-    // {
-    //   id: 7,
-    //   uname: 'Something0123',
-    //   status: 'Active Now',
-    //   profile: './assets/images/blaze.png',
-    // },
-    // {
-    //   id: 8,
-    //   uname: 'Something0123',
-    //   status: 'Active Now',
-    //   profile: './assets/images/blaze.png',
-    // },
-    // {
-    //   id: 9,
-    //   uname: 'Something0123',
-    //   status: 'Active Now',
-    //   profile: './assets/images/blaze.png',
-    // },
-    // {
-    //   id: 10,
-    //   uname: 'Something0123',
-    //   status: 'Active Now',
-    //   profile: './assets/images/blaze.png',
-    // },
-    // {
-    //   id: 11,
-    //   uname: 'Something0123',
-    //   status: 'Active Now',
-    //   profile: './assets/images/blaze.png',
-    // },
-    // {
-    //   id: 12,
-    //   uname: 'Something0123',
-    //   status: 'Active Now',
-    //   profile: './assets/images/blaze.png',
-    // },
+    }
   ];
   showChatItemMenu: boolean = false;
   toggleItemMenu(e: any) {

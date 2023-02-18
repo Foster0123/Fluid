@@ -1,3 +1,6 @@
+:host {
+    --button-bg-color:#0CAFFF;
+}
 .fluid-index-page {
     position: relative;
     width: 100%;
@@ -36,29 +39,42 @@
     }
 }
 
-.get-started-button-container {
+.index-button-container {
     grid-area: button;
     display: flex;
     justify-content: center;
 }
 
-.index-page-get-started-button {
-
+.get-started-button {
     text-align: center;
-    background-color: silver;
-    padding: 10px;
-    border-radius: 50px;
-    margin-bottom: 30px;
     width: 200px;
-
+    outline: none;
+    border: none;
+    background: none;
     a {
         display: flex;
         align-items: center;
         justify-content: center;
-
+        background: none;
+        text-decoration: none;
+        font-family: "Open Sans", monospace;
+        font-size: 18px;
+        padding: 10px;
+        border-radius: 50px;
+        font-weight: bolder;
+        color: white;
+        transition:box-shadow, 200ms ease-in-out;
+        &:hover {
+            box-shadow: 0 0 10px var(--button-bg-color);
+            transition:box-shadow, 200ms ease-in-out;
+        }
         p {
             margin-right: 10px;
         }
+    }
+    a + p:hover {
+        position: relative;
+        left: 10px;
     }
 }
 

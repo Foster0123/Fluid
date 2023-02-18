@@ -1,0 +1,16 @@
+.friend-user-intro {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.friend-user-profile-image {
+	width: 150px;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 50%;
+}
+.friend-user-name {
+	font-size: 1.5em;
+	font-family: 'Lato', sans-serif;
+}

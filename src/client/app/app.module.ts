@@ -20,7 +20,7 @@ const appRoutes: Routes = [
   {path: "account", component: AccountComponent},
   {path: "signin", component: SigninComponent},
   {path: "signup", component: SignupComponent},
-  {path: "chat/chat-section", component: ChatSectionComponent},
+  {path: "chat-section", component: ChatSectionComponent},
 ];
 
 @NgModule({

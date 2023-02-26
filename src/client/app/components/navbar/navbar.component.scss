@@ -12,7 +12,8 @@
     background-color: var(--navbar-bg-color);
     backdrop-filter: blur(2.5px);
     width: 100%;
-    z-index: 10;
+    margin-bottom: 5px;
+    z-index: 20;
 }
 
 .navbar-header-section {
@@ -40,6 +41,7 @@
 .navbar-links-section {
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 
 .navlink-container {

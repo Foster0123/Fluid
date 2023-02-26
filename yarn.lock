@@ -123,6 +123,15 @@
   dependencies:
     tslib "^2.3.0"
 
+"@angular/cdk@^14.0.0":
+  version "14.2.7"
+  resolved "https://registry.yarnpkg.com/@angular/cdk/-/cdk-14.2.7.tgz#65eb6fbbeed6120fad4e3913aa66f8b74c853ac3"
+  integrity sha512-/tEsYaUbDSnfEmKVvAMramIptmhI67O+9STjOV0i+74XR2NospeK0fkbywIANu1n3w6AHGMotvRWJrjmbCElFg==
+  dependencies:
+    tslib "^2.3.0"
+  optionalDependencies:
+    parse5 "^5.0.0"
+
 "@angular/cli@~15.1.6":
   version "15.1.6"
   resolved "https://registry.yarnpkg.com/@angular/cli/-/cli-15.1.6.tgz#2a19e58688826cc52388e7ebade9f0060d84747d"
@@ -1483,6 +1492,20 @@
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/@leichtgewicht/ip-codec/-/ip-codec-2.0.4.tgz#b2ac626d6cb9c8718ab459166d4bb405b8ffa78b"
   integrity sha512-Hcv+nVC0kZnQ3tD9GVu5xSMR4VVYOteQIr/hwFPVEvPdlXqgGEuRjiheChHgdM+JyqdgNcmzZOX/tnl0JOiI7A==
+
+"@nebular/eva-icons@10.0.0":
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/@nebular/eva-icons/-/eva-icons-10.0.0.tgz#ce1f832f8548d1701e2de197e420b8d6e0580944"
+  integrity sha512-z/8j+5f81IzyxP1Hl2xS1+k9QEYpJpKcbK5SWfR66z9OMTIR+/V5OGGvpR7XLLIBEwzFPab72KwYE8Pf/2JDLQ==
+  dependencies:
+    tslib "^2.3.0"
+
+"@nebular/theme@10.0.0":
+  version "10.0.0"
+  resolved "https://registry.yarnpkg.com/@nebular/theme/-/theme-10.0.0.tgz#ec88a789c09a198cc906554943b0dbc4b108bcb1"
+  integrity sha512-XpATY3IOPiIAcikQMQ7PSaZ2GvuPWyR/vhSc+fYJYY91IoggtgGrwDdf27pw+rNS4WV/cqeGR0voV4//EHMlHg==
+  dependencies:
+    tslib "^2.3.0"
 
 "@ng-bootstrap/ng-bootstrap@14.0.1":
   version "14.0.1"
@@ -3023,6 +3046,11 @@ etag@~1.8.1:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/etag/-/etag-1.8.1.tgz#41ae2eeb65efa62268aebfea83ac7d79299b0887"
   integrity sha512-aIL5Fx7mawVa300al2BnEE4iNvo1qETxLrPI/o05L7z6go7fCw1J6EQmbK4FmJ2AS7kgVF/KEZWufBfdClMcPg==
+
+eva-icons@^1.1.2:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/eva-icons/-/eva-icons-1.1.3.tgz#d4a88a93e92250c769703eb90920752ab0f72c0a"
+  integrity sha512-QBSEWNbEx1H0numXP1qgxKVCZHonRaky5ft4pGzQBcO4cy7mEja6TuJ8rc7BqX2pmkvetVQWKDH+DK/8y7GTag==
 
 eventemitter-asyncresource@^1.0.0:
   version "1.0.0"
@@ -4743,6 +4771,11 @@ parse5-sax-parser@^6.0.1:
   integrity sha512-kXX+5S81lgESA0LsDuGjAlBybImAChYRMT+/uKCEXFBFOeEhS52qUCydGhU3qLRD8D9DVjaUo821WK7DM4iCeg==
   dependencies:
     parse5 "^6.0.1"
+
+parse5@^5.0.0:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/parse5/-/parse5-5.1.1.tgz#f68e4e5ba1852ac2cadc00f4555fff6c2abb6178"
+  integrity sha512-ugq4DFI0Ptb+WWjAdOK16+u/nHfiIrcE+sh8kZMaM0WllQKLI9rOUq6c2b7cwPkXdzfQESqvoqK6ug7U/Yyzug==
 
 parse5@^6.0.1:
   version "6.0.1"

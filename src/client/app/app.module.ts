@@ -13,6 +13,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ChatSectionComponent } from './components/chat-section/chat-section.component';
 import { ChatSidebarComponent } from './components/chat-sidebar/chat-sidebar.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { NbThemeModule, NbLayoutModule } from '@nebular/theme';
+import { NbEvaIconsModule } from '@nebular/eva-icons';
 
 const appRoutes: Routes = [
   {path: "", component:HomeComponent},
@@ -40,6 +42,9 @@ const appRoutes: Routes = [
     RouterModule.forRoot(appRoutes),
     BrowserAnimationsModule,
     NgbModule,
+    NbThemeModule.forRoot({ name: 'default' }),
+    NbLayoutModule,
+    NbEvaIconsModule,
   ],
   exports: [
     RouterModule

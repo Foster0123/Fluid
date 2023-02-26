@@ -3,19 +3,32 @@
         <header>Chats</header>
         <i id="sidebar-menu" class="bi bi-chevron-double-left" #sidebarMenu></i>
     </section>
+    <section class="sidebar-menu">
+        <section class="sidebar-menubar-container">
+            <button class="sidebar-menu-button">
+                <i class="bi bi-chat"></i>    
+            </button>
+            <button  class="sidebar-menu-button">
+                <i class="bi bi-chat"></i>    
+            </button>
+            <button  class="sidebar-menu-button">
+                <i class="bi bi-plus"></i>
+            </button>
+        </section>
+    </section>
     <ul class="sidebar-item-list">
-        <li class="sidebar-item">
+        <li class="sidebar-item" *ngFor="let chat of chats">
             <a class="sidebar-item-link" href="#">
                 <div class="item-image">
                     <img
-                        src="https://wallpaperaccess.com/full/1122261.jpg"
-                        alt="Prince Of Persia"
+                        src={{chat.image}}
+                        alt="Chat Profile Image"
                     />
                     <span class="active-status-dot"></span>
                 </div>
                 <div class="item-details">
-                    <p class="item-username">Username</p>
-                    <p class="item-active-status">Active Now</p>
+                    <p class="item-username">{{chat.username}}</p>
+                    <p class="item-active-status">{{chat.status}}</p>
                 </div>
             </a>
             <div class="chat-item-menu-section">

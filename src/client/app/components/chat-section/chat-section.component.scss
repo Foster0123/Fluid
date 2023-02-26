@@ -11,7 +11,7 @@
     --chat-scrollbar-bg-color: transparent;
     --chat-scrollbar-thumb-bg-color: whitesmoke;
     --your-msg-bg-color: green;
-    --their-msg-bg-color: teal;
+    --their-msg-bg-color: #002D62;
     --msg-text-color: white;
     --app-msg-color: green;
     --chat-accent-color: rgba(15, 54, 153, 0.4);
@@ -25,9 +25,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-html {
-    -webkit-font-smoothing: antialiased;
-}
 .chat-container {
     width: 100%;
     background-color: var(--chat-ui-bg-color);
@@ -39,9 +36,9 @@ html {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    height: 90vh;
     align-items: center;
     overflow-y:hidden;
-    height: 100vh;
     position: relative;
     border-radius: 10px;
 }
@@ -55,7 +52,6 @@ html {
         li {
             margin: 5px 0;
             div {
-
                 max-width: 75%;
             }
         }

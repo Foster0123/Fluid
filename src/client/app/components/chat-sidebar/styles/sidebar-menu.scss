@@ -1,0 +1,30 @@
+.sidebar-menu {
+	width: 100%;
+	padding: 10px;
+}
+.sidebar-menubar-container {
+	text-align: right;
+	padding: 2.5px 0;
+}
+.sidebar-menu-button {
+	display: inline-block;
+	background: none;
+	outline: none;
+	border:none;
+	border-radius: 50%;
+	margin-left: 5px;
+	background-color: deepskyblue;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	position: relative;
+	i {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform:translate(-50%, -50%);
+		font-size: 1.5em;
+		color: whitesmoke;
+		padding: 5px;
+	}
+}

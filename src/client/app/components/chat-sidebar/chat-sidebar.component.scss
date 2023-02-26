@@ -1,15 +1,15 @@
 @use './styles/sidebar-header';
 @use './styles/sidebar-items';
 @use './styles/sidebar-items-menu';
+@use './styles/sidebar-menu';
 
 .sidebar {
-    min-height: 100%;
     display: grid;
     overflow-x: hidden;
     border-radius: 10px;
-    grid-template-rows: 60px 1fr;
     background: var(--sidebar-bg-color);
     width: 100%;
+    height: 90vh;
     transform-origin: left;
     transition: width, 200ms ease-out;
     color: var(--sidebar-fg-color);

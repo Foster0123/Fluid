@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./chat-section.component.scss']
 }) 
 export class ChatSectionComponent {
- 
+  controlHeight(e: any): any {
+    e.style.height = window.innerHeight - 60;
+  }
 }

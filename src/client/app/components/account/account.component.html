@@ -59,22 +59,25 @@
 	<section class="account-previewer">
 		<div class="profile-section">
 			<section class="profile-header">
-				<h3>Profile</h3>
+				<h3>User's Profile</h3>
 			</section>
 			<section class="profile-image-section">
 				<section class="profile-image">
-					<img src="https://www.hotelbooqi.com/wp-content/uploads/2021/12/128-1280406_view-user-icon-png-user-circle-icon-png.png" alt="">
-					<label for="profile_image"></label>
+					<img src="https://www.hotelbooqi.com/wp-content/uploads/2021/12/128-1280406_view-user-icon-png-user-circle-icon-png.png" alt="User Image">
+					<span class="profile_dropdown"></span>
+					<label for="profile_image" class="profile-label">
+						<i class="bi bi-camera2"></i>
+					</label>
 					<input type="file" id="profile_image" name="profile_image">
 				</section>
 			</section>
 			<section class="profile-content">
 				<label for="account_fname">Name</label>
-				<input class="account_input" type="text" id="account_fname" name="account_fname">
+				<input class="account_input" placeholder="Name" type="text" id="account_fname" name="account_fname">
 			</section>
 			<section class="profile-content">
 				<label for="account_fname">Username</label>
-				<input class="account_input" type="text" id="account_uname" name="account_fname">
+				<input class="account_input" placeholder="Username" type="text" id="account_uname" name="account_fname">
 			</section>
 			<section class="profile-content">
 				<label for="account_fname">Email</label>
@@ -82,7 +85,7 @@
 			</section>
 			<section class="profile-content">
 				<label for="account_fname">Bio</label>
-				<textarea rows="5" class="account_input" type="text" id="account_fname" name="account_fname"></textarea>
+				<textarea rows="5" class="account_input" placeholder="Bio" type="text" id="account_fname" name="account_fname"></textarea>
 			</section>
 		</div>
 	</section>

@@ -4,6 +4,8 @@
 }
 .profile-header {
 	text-align: center;
+	font-family: "playfair display";
+	letter-spacing: 2px;
 	font-size: 24px;
 }
 .profile-image-section {
@@ -14,7 +16,7 @@
 	margin: 10px 0;
 }
 .profile-image {
-
+	position: relative;
 	img {
 		width: 150px;
 		height: 150px;
@@ -26,6 +28,22 @@
 	}
 	input {
 		display: none;
+	}
+	.profile-label {
+		position: absolute;
+		bottom: 20px;
+		right: 25px;
+		cursor: pointer;
+		i {
+			font-size: 18px;
+			background-color: rgb(0,0,0,0.85);
+			border-radius: 50%;
+			padding: 5px;
+			&::before {
+				position: relative;
+				top: 1px;
+			}
+		}
 	}
 }
 .profile-content {
@@ -54,11 +72,11 @@
 		outline: none;
 		border: none;
 		color: white;
-		font-size: 18px;
+		font-size: 14px;
 		resize: vertical;
 		font-family: inherit;
-	}
-	textarea {
-		font-size: 14px!important;
+		&::placeholder {
+			color: white;
+		}
 	}
 }

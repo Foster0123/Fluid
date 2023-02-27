@@ -48,7 +48,7 @@ $open-sans:'Open Sans', sans-serif;
     border-radius: 5px;
     font-size: 3em;
     font-family: $open-sans;
-    padding: 10px;
+    padding: 5px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -124,6 +124,10 @@ $open-sans:'Open Sans', sans-serif;
 }
 @media only screen and (max-width: 1000px){
     .chat-container {
-        grid-template-columns: 2fr 4fr;
+        grid-template-columns: 1fr;
+    }
+    .inner-chat-container {
+        grid-template-areas: "chat-section chat-section";
+        grid-gap: 0;
     }
 }

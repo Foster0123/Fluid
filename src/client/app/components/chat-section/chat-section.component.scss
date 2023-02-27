@@ -42,6 +42,11 @@
     position: relative;
     border-radius: 10px;
 }
+@media (max-width: 1000px) {
+    .chat-container {
+        height: 95vh;
+    }
+}
 @media only screen and (max-width: 600px) {
     .chat-text-msg-input {
         max-height: 100px!important;

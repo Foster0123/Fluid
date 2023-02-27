@@ -1,0 +1,43 @@
+:host {
+	--sidebar-bg-color: indigo;
+}
+.account-container {
+	padding: 5px;
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	grid-gap: 5px;
+}
+.account-sidebar {
+	height: 90vh;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: var(--sidebar-bg-color);
+}
+.sidebar-list {
+	a {
+		text-decoration: none;
+		color: white;
+		font-size: 20px;
+		font-weight: bold;
+		font-family: "Open Sans", sans-serif;
+		padding: 10px;
+		display:grid;
+		border-radius: 10px;
+		grid-gap: 5px;
+		margin-bottom: 5px;
+		grid-template-columns: 25px 1fr;
+		transition: background-color, 100ms ease-in;
+		&:hover {
+			transition: background-color, 100ms ease-in;
+			background-color: rgba(0,0,0,0.85);
+		}
+		p {
+			text-align: left;
+		}
+	}
+}
+.account-previewer {
+	background-color: red;
+	border-radius: 10px;
+
+}

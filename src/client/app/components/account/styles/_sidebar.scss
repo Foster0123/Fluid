@@ -1,0 +1,84 @@
+.account-sidebar {
+	grid-area: account-sidebar;
+	height: 90vh;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: var(--sidebar-bg-color);
+}
+
+.sidebar-header {
+	display: grid;
+	align-items: center;
+	justify-content: space-between;
+	grid-template-columns: 35px 1fr 35px;
+
+	h3 {
+		text-align: center;
+		color: white;
+		font-size: 24px;
+		font-weight: lighter;
+		font-family: "helvetica Neue", sans-serif;
+	}
+
+	i {
+		text-align: center;
+		color: white;
+		font-size: 20px;
+	}
+
+	button {
+		background: none;
+		outline: none;
+		display: inline-block;
+		border: none;
+		font-size: 20px;
+		cursor: pointer;
+		padding: 5px;
+		border-radius: 5px;
+
+		&:hover {
+			background-color: rgba(0, 0, 0, 0.85);
+		}
+	}
+}
+
+.sidebar-list {
+	margin-top: 10px;
+	list-style: none;
+
+	a {
+		text-decoration: none;
+		color: white;
+		font-size: 16px;
+		font-weight: bold;
+		font-family: "Open Sans", sans-serif;
+		padding: 10px;
+		display: grid;
+		align-items: center;
+		border-radius: 10px;
+		grid-gap: 5px;
+		margin-bottom: 5px;
+		grid-template-columns: 25px 1fr;
+		transition: background-color, 100ms ease-in;
+
+		&:hover {
+			transition: background-color, 100ms ease-in;
+			background-color: rgba(0, 0, 0, 0.85);
+		}
+		p {
+			text-align: left;
+		}
+
+		i {
+			font-size: 20px;
+		}
+	}
+}
+
+@media (max-width: 600px) {
+	.account-sidebar {
+		position: absolute;
+		top: 5px;
+		left: 5px;
+	}
+}

@@ -10,12 +10,15 @@
     background: var(--sidebar-bg-color);
     width: 100%;
     height: 90vh;
-    transform-origin: left;
-    z-index: 1;
+    padding: 0 0 10px 0;
+    z-index: 10;
     transition: width, 200ms ease-out;
     color: var(--sidebar-fg-color);
 }
-
+.hide-sidebar {
+    width: 0px;
+    transition: width, 200ms ease-in;
+}
 @media (max-width: 1000px) {
     .sidebar {
         max-width: 250px;

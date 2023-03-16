@@ -156,11 +156,12 @@
         </div>
 
         <!-- Text Input Element -->
-        <div class="msg-input-container" id="msg-input-container">
+        <div class="msg-input-container" id="msg-input-container" #msgContainer>
             <div
                 name="chat-text-msg-input"
                 id="chat-text-msg-input"
                 class="chat-text-msg-input"
+                #msgDiv
                 placeholder="Type A Message ..."
                 contenteditable="true"
             ></div>
@@ -170,7 +171,7 @@
             >
                 Type A Message...
             </div>
-            <textarea class="msg-textarea" id="msg-textarea"></textarea>
+            <textarea #msgArea class="msg-textarea" id="msg-textarea"></textarea>
         </div>
         <!-- Emoji Icon Element -->
         <div class="msg-input-right-icons">

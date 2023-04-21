@@ -1,10 +1,12 @@
+@use './../../../assets/scss/variables';
+
 .account-sidebar {
-	grid-area: account-sidebar;
-	height: 90vh;
 	padding: 10px;
 	border-radius: 10px;
-	background-color: var(--account-bg-color);
+	background-color: var(--default-bg-color);
 	z-index: 1;
+	color: var(--default-fg-color);
+	height: 100%;
 }
 
 .sidebar-header {
@@ -12,10 +14,11 @@
 	align-items: center;
 	justify-content: space-between;
 	grid-template-columns: 35px 1fr 35px;
+	color: inherit;
 
 	h3 {
 		text-align: center;
-		color: white;
+		color: inherit;
 		font-size: 24px;
 		font-weight: lighter;
 		font-family: "helvetica Neue", sans-serif;
@@ -23,11 +26,12 @@
 
 	i {
 		text-align: center;
-		color: white;
+		color: inherit;
 		font-size: 20px;
 	}
 
 	button {
+		color: inherit;
 		background: none;
 		outline: none;
 		display: inline-block;
@@ -38,7 +42,7 @@
 		border-radius: 5px;
 
 		&:hover {
-			background-color: rgba(0, 0, 0, 0.85);
+			background-color: var(--accent-color);
 		}
 	}
 }
@@ -46,10 +50,10 @@
 .sidebar-list {
 	margin-top: 10px;
 	list-style: none;
-
+	color: inherit;
 	a {
 		text-decoration: none;
-		color: white;
+		color: inherit;
 		font-size: 16px;
 		font-weight: bold;
 		font-family: "Open Sans", sans-serif;
@@ -64,7 +68,7 @@
 
 		&:hover {
 			transition: background-color, 100ms ease-in;
-			background-color: rgba(0, 0, 0, 0.85);
+			background-color: var(--accent-color);
 		}
 
 		p {
@@ -74,13 +78,5 @@
 		i {
 			font-size: 20px;
 		}
-	}
-}
-
-@media (max-width: 600px) {
-	.account-sidebar {
-		position: absolute;
-		top: 5px;
-		left: 5px;
 	}
 }

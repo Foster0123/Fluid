@@ -1,11 +1,11 @@
 import { Component, ElementRef, ViewChild, AfterViewInit } from '@angular/core';
 
 @Component({
-    selector: 'app-chat-section',
-    templateUrl: './chat-section.component.html',
-    styleUrls: ['./chat-section.component.scss']
+    selector: 'app-chat-preview',
+    templateUrl: './chat-preview.component.html',
+    styleUrls: ['./chat-preview.component.scss']
 }) 
-export class ChatSectionComponent implements AfterViewInit {
+export class ChatPreviewComponent implements AfterViewInit {
  
     @ViewChild('msgDiv') msgDiv!: ElementRef;
     @ViewChild('msgArea') msgArea!: ElementRef;

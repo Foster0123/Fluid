@@ -7,11 +7,11 @@ interface ChatInterface {
   showMenu: boolean;
 }
 @Component({
-  selector: 'app-chat',
-  templateUrl: './chat.component.html',
-  styleUrls: ['./chat.component.scss'],
+  selector: 'app-chat-container',
+  templateUrl: './chat-container.component.html',
+  styleUrls: ['./chat-container.component.scss'],
 })
-export class ChatComponent {
+export class ChatContainerComponent {
   chats: ChatInterface[] = [ 
     {
       id: 0,

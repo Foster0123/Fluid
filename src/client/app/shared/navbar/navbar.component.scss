@@ -10,10 +10,11 @@
     justify-content: space-between;
     padding: 5px 0;
     background-color: var(--navbar-bg-color);
-    backdrop-filter: blur(2.5px);
     width: 100%;
     margin-bottom: 5px;
     z-index: 20;
+    grid-area: app-navbar;
+    position: relative;
 }
 
 .navbar-header-section {
@@ -158,6 +159,7 @@
     .navbar-links-section {
         display: none;
         width: 100%;
+        background-color: var(--navbar-bg-color);
     }
 
     .navlink-container {

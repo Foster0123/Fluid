@@ -1,40 +1,6 @@
+@use './../../../assets/scss/variables';
 @use './styles/profile';
 
 :host {
 	--account-bg-color: darkblue;
-}
-
-.account-container {
-	padding: 5px;
-	display: grid;
-	grid-template-areas: "account-sidebar account-previewer";
-	grid-template-rows: 1fr;
-	grid-template-columns: max(250px) 1fr;
-	grid-gap: 5px;
-	height: 90vh;
-	position: relative;
-	color: whitesmoke;
-}
-
-.account-previewer {
-	grid-area: account-previewer;
-	background: radial-gradient(ellipse at top right, var(--account-bg-color), #010101);
-	border-radius: 10px;
-	overflow-x: hidden;
-	overflow-y: scroll;
-	margin-bottom: 10px;
-	scrollbar-width:thin;
-	&::-webkit-scrollbar {
-		width: 10px;
-	}
-}
-
-@media (max-width: 600px) {
-	.account-container {
-		grid-template-areas: "account-previewer account-previewer";
-	}
-
-	.account-previewer {
-		height: 90vh;
-	}
 }

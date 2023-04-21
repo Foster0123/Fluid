@@ -4,10 +4,8 @@
     --chat-item-menu-bg-color: rgba(0, 0, 0, 0.8);
 }
 .sidebar-item-list {
-    overflow: scroll;
-    overflow-x: hidden;
-    height: 100%;
-    padding: 0 5px 0 10px;
+    height: calc(100vh - 200px);
+    overflow-y: scroll;
     scrollbar-width: thin;
     &::-webkit-scrollbar {
         width: 5px;

@@ -25,8 +25,8 @@ export class ChatSidebarComponent implements AfterViewInit {
         { id: 6, image: "https://wallpaperaccess.com/full/1122261.jpg", username: "Username", status: "Active Now" },
         { id: 7, image: "https://wallpaperaccess.com/full/1122261.jpg", username: "Username", status: "Active Now" },
         { id: 8, image: "https://wallpaperaccess.com/full/1122261.jpg", username: "Username", status: "Active Now" },
-        { id: 9, image: "https://wallpaperaccess.com/full/1122261.jpg", username: "Username", status: "Active Now" },
-        { id: 10, image: "https://wallpaperaccess.com/full/1122261.jpg", username: "Username", status: "Active Now" },
+        // { id: 9, image: "https://wallpaperaccess.com/full/1122261.jpg", username: "Username", status: "Active Now" },
+        // { id: 10, image: "https://wallpaperaccess.com/full/1122261.jpg", username: "Username", status: "Active Now" },
     ]
 
 }

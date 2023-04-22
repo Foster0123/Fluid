@@ -22,7 +22,8 @@
     .sidebar {
         max-width: 250px;
         position: absolute;
-        top: 75px;
+        top: 70px;
         left: 5px;
+        height: calc(100vh - 75px);
     }
 }

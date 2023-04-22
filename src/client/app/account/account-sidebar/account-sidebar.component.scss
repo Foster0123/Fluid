@@ -1,12 +1,12 @@
 @use './../../../assets/scss/variables';
-
+@use './../../../assets/scss/mixins/scrollbar' as scrl;
 .account-sidebar {
 	padding: 10px;
 	border-radius: 10px;
 	background-color: var(--default-bg-color);
 	z-index: 1;
 	color: var(--default-fg-color);
-	height: 100%;
+
 }
 
 .sidebar-header {
@@ -51,6 +51,10 @@
 	margin-top: 10px;
 	list-style: none;
 	color: inherit;
+	padding: 2.5px;
+	height: calc(100vh - 142.5px);
+	overflow-y: scroll;
+	@include scrl.scrollbar;
 	a {
 		text-decoration: none;
 		color: inherit;
@@ -78,5 +82,14 @@
 		i {
 			font-size: 20px;
 		}
+	}
+}
+
+@media (max-width: 800px) {
+	.account-sidebar {
+		position: absolute;
+		top: 75px;
+		left: 5px;
+		height: calc(100vh - 80px);
 	}
 }

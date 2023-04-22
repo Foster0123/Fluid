@@ -1,3 +1,9 @@
+@use './styles/chat-bar';
+@use './styles/chat-friend';
+@use './styles/chat-input';
+@use './styles/chat-menu';
+@use './styles/chat-msg';
+@use './styles/chat-section';
 * {
     margin: 0;
     padding: 0;

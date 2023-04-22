@@ -12,15 +12,16 @@
 }
 .chat-navbar-container {
     grid-area: chat-navbar;
+    margin-bottom: 2.5px;
 }
 .chat-preview-pane-container {
     grid-area: chat-preview;
-    background: red;
+    background: indigo;
     height: 100%;
+    border-radius: 10px;
 }
 .chat-sidebar-container {
     grid-area: chat-sidebar;
-    background: blue;
 }
 .chat-container {
     display: grid;
@@ -40,5 +41,9 @@
             "chat-navbar chat-navbar"
             "chat-preview chat-preview"
         ;
+        grid-gap: 0;
+    }
+    .chat-navbar-container {
+        margin-bottom: 5px;
     }
 }

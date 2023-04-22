@@ -15,6 +15,7 @@
     z-index: 20;
     grid-area: app-navbar;
     position: relative;
+    border-radius: 10px;
 }
 
 .navbar-header-section {
@@ -157,9 +158,13 @@
     }
 
     .navbar-links-section {
+        top: 5px;
         display: none;
         width: 100%;
         background-color: var(--navbar-bg-color);
+        position: relative;
+        top: 5px;
+
     }
 
     .navlink-container {

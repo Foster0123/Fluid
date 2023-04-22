@@ -1,3 +1,6 @@
+@use './../../../../assets/scss/variables';
+@use './../../../../assets/scss/mixins/mixins' as mix;
+
 .profile-section {
 	display: flex;
 	flex-direction: column;
@@ -63,17 +66,18 @@
 		padding: 10px;
 		border-radius: 10px;
 		background: none;
-		background-color: rgba(0,0,0,0.5);
-		backdrop-filter: blur(1px);
+		background-color: var(--default-bg-color);
 		width:70%;
+		font-weight: bold;
 		outline: none;
-		border: none;
-		color: white;
+		border: 1px solid var(--default-fg-color);
+		color: var(--default-fg-color);
 		font-size: 14px;
 		resize: vertical;
+		max-height: 150px;
 		font-family: inherit;
 		&::placeholder {
-			color: white;
+			color: inherit;
 		}
 	}
 }
@@ -85,12 +89,13 @@
 		min-width: 100px;
 		padding: 5px;
 		font-size: 18px;
-		color: inherit;
+		font-weight: bold;
+		color: var(--default-bg-color);
 		font-family: "Open Sans", sans-serif;
 		background: none;
 		border:none;
 		outline: none;
 		border-radius: 5px;
-		background-color: var(--accent-color);
+		background-color: var(--default-fg-color);
 	}
 }

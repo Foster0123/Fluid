@@ -1,0 +1,39 @@
+@mixin scrollbar-default {
+	scrollbar-width: thin;
+	&::-webkit-scrollbar {
+		width: 5px;
+		border-radius: 10px;
+		background-color: black;
+		&-thumb {
+			background-color: gray;
+			border-radius: 10px;
+		}
+	}
+}
+
+@mixin add-flex($ai, $jc, $fd: row) {
+	display: flex;
+	flex-direction: $fd;
+	align-items: $ai;
+	justify-content: $jc;
+}
+
+@mixin scrollbar($w, $bg, $fg, $rounded: 10px) {
+	scrollbar-width: thin;
+	&::-webkit-scrollbar {
+		width: $w;
+		border-radius: $rounded;
+		background-color: $bg;
+		&-thumb {
+			background-color: $fg;
+			border-radius: $rounded;
+		}	
+	}
+}
+
+@mixin no-scrollbar {
+	scrollbar-width: thin;
+	&::-webkit-scrollbar {
+		display: none;
+	}
+}

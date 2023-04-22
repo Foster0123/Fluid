@@ -1,26 +1,15 @@
+@use './../../../../assets/scss/mixins/mixins' as scrl;
+
 .chat-section-container {
     padding-top: 10px;
     width: 100%;
     margin-bottom: 10px;
     padding-right: 0;
     padding-left: 0;
-    margin-top: 50px;
     overflow-y: scroll;
-    height: 100%;
+    height: calc(100vh - 225px);
     color: var(--msg-text-color);
-    &::-webkit-scrollbar {
-        height: 100%;
-        width: 8px;
-        border-radius: 10px;
-        background: var(--chat-scrollbar-bg-color);
-    }
-    &::-webkit-scrollbar-thumb {
-        background: var(--chat-scrollbar-thumb-bg-color);
-        border-radius: 10px;
-    }
-    &:-webkit-scrollbar-button {
-        display: none;
-    }
+    @include scrl.scrollbar-default;
     .chat-msg-move-left {
         justify-content: flex-start;
         align-items: flex-start;

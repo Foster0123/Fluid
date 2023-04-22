@@ -1,137 +1,147 @@
-.input-container {
-    width: 99%;
-    display: grid;
-    grid-template-columns: 45px 1fr 85px;
-    grid-template-areas: "msg-input-left-icons msg-input msg-input-right-icons";
-    align-items: flex-end;
-    justify-content: space-between;
-    bottom: 5px;
-    border-radius: 30px;
-    background-color: darkgoldenrod;
-    max-height: 200px;
-    position: relative;
-    .chat-msg {
-        display: none;
-    }
-}
-.msg-input-container {
-    grid-area: msg-input;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    .msg-textarea {
-        position: absolute;
-        top: 0;
-        resize: none;
-        left: 0;
-        width: 5px;
-        height: 5px;
-        z-index: -1;
-    }
-}
-.chat-text-msg-input {
-    padding: 5px 0;
-    border-radius: 0 10px 10px 0;
-    border: none;
-    width: 100%;
-    text-align: left;
-    font-size: 0.9em;
-    z-index: 1;
-    background-color: transparent;
-    font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+@use './../../../../assets/scss/mixins/mixins' as mix;
+@use './../../../../assets/scss/variables';
+
+button {
     outline: none;
-    display: inline-block;
-    position: relative;
-    max-height: 200px;
-    color: var(--msg-text-color);
-    overflow: auto;
-    &::-webkit-scrollbar {
-        width: 8px;
-        border-radius: 0 20px 20px 0;
-        height: 100%;
-    }
-}
-.chat-text-msg-input-placeholder {
-    color: white;
-    position: absolute;
-    top: 11px;
-    font-size: 16px;
-    left: 4px;
-    transition: opacity, 100ms ease-out;
-    font-family: "Open Sans", sans-serif;
+    border: none;
 }
 
-.chat-msg-icon-label {
-    width: 35px;
-    border-radius: 50%;
-    height: 35px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    margin: 5px;
-    &:hover {
-        background-color: var(--chat-accent-color);
+.input {
+    &-container {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 30px 1fr 70px;
+        grid-template-rows: 1fr;
+        overflow-anchor: none;
+        gap: 5px;
+        justify-content: center;
+        background-color: var(--message-input-field-bg-color);
+        min-height: 0;
+        min-width: 0;
+        align-items: flex-end;
+        padding: 10px;
+        border-radius:0 0 10px 10px;
+        position: absolute;
+        bottom: 0;
     }
-    i {
-        font-size: 1.3em;
-        color: white;
-        height: 16px;
-        width: 16px;
+
+    &-left {
+        width: 100%;
+    }
+
+    &-middle {
+        height: 100%;
+        display: grid;
+        align-items: center;
         position: relative;
-        &:before {
-            position: absolute !important;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+
+        .editable-input {
+            overflow-anchor: none;
+            width: 100%;
+            max-width: 100%;
+            outline: none;
+            font-family: sans-serif;
+            font-size: 16px;
+            color: white;
+            font-weight: medium;
+            padding: 5px;
+            overflow: hidden;
+            overflow-y: scroll;
+            word-break: normal;
+            max-height: 200px;
+            background: transparent;
+            z-index: 1;
+            @include mix.scrollbar(5px, gray, silver);
+
+            &-placeholder {
+                position: absolute;
+                top: 5px;
+                left: 5px;
+                font-weight: bold;
+                font-family: "Open Sans", sans-serif;
+            }
         }
     }
-}
-.msg-input-left-icons {
-    grid-area: msg-input-left-icons;
-}
-.msg-input-right-icons {
-    grid-area: msg-input-right-icons;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 5px 0;
-    position: relative;
-    label {
-        margin: 0 1.5px;
-    }
-    button {
-        background: none;
-        outline: none;
-        border:none;
-        margin: 0;
-        padding: 0;
-        i {
-            font-size: 1.8em;
-        }
+
+    &-right {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 }
-.emoji-menu {
+
+.msg-input-button {
+    background: var(--message-input-button-bg-color);
+    color: white;
+    font-size: 1.2em;
+    padding: 2.5px 7px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover {
+        box-shadow: 0 0 5px var(--message-input-button-bg-color);
+    }
+
+    i {
+        padding: 4px 0;
+    }
+
+    &:focus+.input-left-menu {
+        display: block;
+    }
+}
+
+.hide-input-field {
+    display: none;
+}
+
+.input-left-menu {
+    list-style: none;
     position: absolute;
-    height: auto;
-    width: 360px;
-    bottom: 50px;
-    right: 9px;
-    padding: 7.5px;
-    transform: scale(0);
-    transform-origin: bottom right;
-    transition: transform, 200ms ease;
-    &::-webkit-scrollbar {
-        display: none;
+    bottom: 60px;
+    width: 160px;
+    padding: 5px;
+    left: 0px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: var(--message-input-button-bg-color);
+    color: white;
+    display: none;
+
+    &:focus-within {
+        display: block;
     }
-}
-em-emoji-picker {
-    height: 300px!important;
-}
-.show-emoji-menu {
-    transform: scale(1.0)!important;
-    transition: transform, 200ms ease;
+
+    &-item {
+        width: 100%;
+    }
+
+    .input-left-menu-label {
+        cursor: pointer;
+        display: grid;
+        gap: 5px;
+        padding: 5px;
+        align-items: center;
+        grid-template-columns: 24px 1fr;
+        justify-content: center;
+        border-radius: 5px;
+
+        &:hover {
+            background-color: var(--message-input-field-bg-color);
+        }
+
+        i {
+            font-size: 24px;
+        }
+
+        p {
+            color: white;
+            font-weight: lighter;
+            font-size: 16px;
+            font-family: "Open Sans";
+        }
+    }
 }

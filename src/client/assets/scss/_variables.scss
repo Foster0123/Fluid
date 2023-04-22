@@ -1,7 +1,12 @@
 :host {
     --accent-color:darkcyan;
+    --accent-color-2: purple;
     --account-sidebar-bg-color:indigo;
-    --account-profile-bg-color:rgba(0,0,0,0.75);
-    --default-bg-color:rgba(0,0,0,0.75);
-    --default-fg-color:white;
+    --account-profile-bg-color:rgba(0,0,0,0.95);
+    // --default-bg-color:rgba(0,0,0,0.85);
+    // --default-fg-color:white;
+    --default-bg-color:white;
+    --default-fg-color:rgba(0,0,0,0.95);
+    --message-input-field-bg-color:orangered;
+    --message-input-button-bg-color: black;
 }

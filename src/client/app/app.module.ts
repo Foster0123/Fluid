@@ -14,7 +14,7 @@ import { SignupComponent } from './components/signup/signup.component';
 import { ChatContainerComponent } from './chat/chat-container/chat-container.component';
 
 const appRoutes: Routes = [
-  { path: "", component: HomeComponent },
+  { path: "home", component: HomeComponent },
   { path: "account", component: AccountContainerComponent },
   { path: "chat", component: ChatContainerComponent },
   { path: "signin", component: SigninComponent },

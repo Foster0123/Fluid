@@ -1,5 +1,5 @@
 @use './../../../assets/scss/variables';
-@use './../../../assets/scss/mixins/scrollbar' as scrl;
+@use './../../../assets/scss/mixins/mixins' as mix;
 
 .account-container {
 	display: grid;
@@ -13,7 +13,6 @@
 	grid-template-columns: 225px 1fr;
 	grid-template-rows: 65px 1fr;
 	color: white;
-	position: relative;
 }
 .account-navbar {
 	grid-area: account-navbar;
@@ -26,9 +25,11 @@
 	overflow: hidden;
 	overflow-y: scroll;
 	border-radius: 10px;
-	padding: 10px;
-	background-color: rgba(0, 0, 0, 0.7);
-	@include scrl.scrollbar;
+	padding: 5px;
+	box-shadow: 0 0 5px var(--default-fg-color);
+	background-color: var(--default-bg-color);
+	color: var(--default-fg-color);
+	@include mix.scrollbar-default;
 }
 
 @media (max-width: 800px) {

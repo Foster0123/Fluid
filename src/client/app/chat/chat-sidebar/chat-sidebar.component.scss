@@ -16,6 +16,9 @@
 }
 .hide-sidebar {
     width: 0px;
+    overflow: hidden;
+    border:none;
+    padding: 0;
     transition: width, 200ms ease-in;
 }
 @media (max-width: 1000px) {

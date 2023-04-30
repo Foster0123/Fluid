@@ -14,11 +14,11 @@ import { SignupComponent } from './components/signup/signup.component';
 import { ChatContainerComponent } from './chat/chat-container/chat-container.component';
 
 const appRoutes: Routes = [
-  { path: "home", component: HomeComponent },
-  { path: "account", component: AccountContainerComponent },
+  { path: "", component: HomeComponent },
   { path: "chat", component: ChatContainerComponent },
-  { path: "signin", component: SigninComponent },
-  { path: "signup", component: SignupComponent },
+  { path: "account", component: AccountContainerComponent },
+  { path: "login", component: SigninComponent },
+  { path: "register", component: SignupComponent },
 ];
 
 @NgModule({

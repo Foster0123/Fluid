@@ -18,7 +18,7 @@
 	justify-content: $jc;
 }
 
-@mixin scrollbar($w, $bg, $fg, $rounded: 10px) {
+@mixin scrollbar($w: 5px, $bg: gray, $fg: silver, $rounded: 10px) {
 	scrollbar-width: thin;
 	&::-webkit-scrollbar {
 		width: $w;

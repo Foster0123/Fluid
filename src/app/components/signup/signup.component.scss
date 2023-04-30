@@ -1,0 +1,10 @@
+@use './../../../assets/scss/shared/form';
+@use './../../../assets/scss/mixins/mixins' as mix;
+.signup-container {
+	@include mix.add-flex(center, center, column);
+	min-height: 100vh;
+}
+.signup {
+	width: 100%;
+	max-width: 600px;
+}

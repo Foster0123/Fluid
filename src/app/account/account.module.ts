@@ -13,9 +13,15 @@ import { AccountContainerComponent } from './account-container/account-container
 
 
 const accountRoutes : Routes = [
-  { path: "", component: AccountContainerComponent },
-  { path: "profile", component: ProfileComponent },
-  { path: "notification", component: NotificationComponent },
+  { 
+    path: "account", 
+    component: AccountContainerComponent,
+    children: [
+      { path: "profile", component: ProfileComponent },
+      { path: "notification", component: NotificationComponent },
+    ]
+  }
+  
 ]
 
 @NgModule({
@@ -28,11 +34,12 @@ const accountRoutes : Routes = [
   imports: [
     CommonModule,
     SharedModule,
-    RouterModule.forRoot(accountRoutes)
+    RouterModule.forChild(accountRoutes)
   ],
   exports: [
     AccountContainerComponent,
-    NavbarComponent
+    NavbarComponent,
+    RouterModule
   ]
 })
 export class AccountModule { }

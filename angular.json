@@ -11,32 +11,32 @@
         }
       },
       "root": "./",
-      "sourceRoot": "src/client",
+      "sourceRoot": "src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/",
-            "index": "src/client/index.html",
-            "main": "src/client/main.ts",
+            "index": "src/index.html",
+            "main": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/client/public",
-              "src/client/assets",
-              "src/client/assets/favicon.ico",
-              "src/client/assets/favicon-16x16.png",
-              "src/client/assets/favicon-32x32.png",
-              "src/client/assets/android-chrome-192x192.png",
-              "src/client/assets/android-chrome-512x512.png",
-              "src/client/assets/apple-touch-icon.png"
+              "src/public",
+              "src/assets",
+              "src/assets/favicon.ico",
+              "src/assets/favicon-16x16.png",
+              "src/assets/favicon-32x32.png",
+              "src/assets/android-chrome-192x192.png",
+              "src/assets/android-chrome-512x512.png",
+              "src/assets/apple-touch-icon.png"
             ],
             "styles": [
-              "src/client/assets/scss/main.scss"
+              "src/assets/scss/main.scss"
             ],
             "scripts": []
           },
@@ -95,11 +95,11 @@
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "src/client/public/favicon.ico",
-              "src/client/assets"
+              "src/public/favicon.ico",
+              "src/assets"
             ],
             "styles": [
-              "src/client/assets/scss/main.scss"
+              "src/assets/scss/main.scss"
             ],
             "scripts": []
           }

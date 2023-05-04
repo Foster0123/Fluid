@@ -40,14 +40,14 @@ const appRoutes: Routes = [
   { 
     path: "account", 
     component: AccountComponent,
-    /* children: [
+    children: [
       { path: "", component: ProfileComponent },
       { path: "change-password", component: ChangePasswordComponent },
       { path: "notifications", component: NotificationComponent },
       { path: "activity", component: ActivityComponent },
       { path: "security", component: SecurityComponent },
       { path: "danger", component: DangerComponent }
-    ] */
+    ]
   },
   { path: "login", component: SigninComponent },
   { path: "register", component: SignupComponent },

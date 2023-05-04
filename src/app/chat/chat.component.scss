@@ -12,7 +12,6 @@
 }
 .chat-navbar-container {
     grid-area: chat-navbar;
-    margin-bottom: 2.5px;
 }
 .chat-preview-pane-container {
     grid-area: chat-preview;
@@ -24,9 +23,7 @@
 }
 .chat-container {
     display: grid;
-    grid-gap: 5px;
     height: 100vh;
-    padding: 5px;
     grid-template-areas: 
     "chat-navbar chat-navbar"
     "chat-sidebar chat-preview"

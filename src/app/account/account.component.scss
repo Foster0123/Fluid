@@ -4,8 +4,6 @@
 .account-container {
 	display: grid;
 	height: 100vh;
-	grid-gap: 5px;
-	padding: 5px;
 	grid-template-areas: 
 		"account-navbar account-navbar"
 		"account-sidebar account-previewer"
@@ -24,9 +22,7 @@
 	grid-area: account-previewer;
 	overflow: hidden;
 	overflow-y: scroll;
-	border-radius: 10px;
 	padding: 5px;
-	box-shadow: 0 0 5px var(--default-fg-color);
 	background-color: var(--default-bg-color);
 	color: var(--default-fg-color);
 	@include mix.scrollbar-default;

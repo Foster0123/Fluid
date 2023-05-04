@@ -19,7 +19,7 @@
         height: 160px;
         padding: 5px;
         z-index: 1;
-        background-color: var(--chat-item-menu-bg-color);
+        color: var(--default-bg-color);
         transform: scale(0);
         transition: transform, 100ms ease-out;
         transform-origin: top right;
@@ -52,4 +52,7 @@
             }
         }
     }
+}
+.chat-item-menu-section {
+    color: whitesmoke;
 }

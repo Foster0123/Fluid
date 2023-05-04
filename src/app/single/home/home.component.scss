@@ -1,8 +1,11 @@
+@use './../../../assets/scss/variables';
+
 :host {
     --button-bg-color:#0CAFFF;
 }
 .fluid-index-page {
     position: relative;
+    background-color: var(--default-bg-color);
     width: 100%;
     display: grid;
     grid-template-areas:

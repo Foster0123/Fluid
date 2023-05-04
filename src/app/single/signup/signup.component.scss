@@ -1,8 +1,20 @@
 @use './../../../assets/scss/shared/form';
 @use './../../../assets/scss/mixins/mixins' as mix;
+@use './../../../assets/scss/variables';
+
 .signup-container {
 	@include mix.add-flex(center, center, column);
 	min-height: 100vh;
+	background-color: var(--default-bg-color);
+	color: var(--default-fg-color);
+}
+
+.form-input-field {
+	color: var(--default-fg-color);
+}
+.form-input-field-section {
+	background-color: var(--default-bg-color);
+	color: var(--default-fg-color);
 }
 .signup {
 	width: 100%;

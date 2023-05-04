@@ -1,7 +1,7 @@
 // Core Modules
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule } from '@angular/router';
 
 // Custom Module
 import { SharedModule } from '../shared/shared.module'; 
@@ -16,15 +16,6 @@ import { ActivityComponent } from './activity/activity.component';
 import { SecurityComponent } from './security/security.component';
 import { DangerComponent } from './danger/danger.component';
 
-const accountRoutes: Routes = [
-  { path: "", component: ProfileComponent },
-  { path: "change-password", component: ChangePasswordComponent },
-  { path: "notifications", component: NotificationComponent },
-  { path: "activity", component: ActivityComponent },
-  { path: "security", component: SecurityComponent },
-  { path: "danger", component: DangerComponent }
-]
-
 @NgModule({
   declarations: [
     AccountComponent,
@@ -36,11 +27,13 @@ const accountRoutes: Routes = [
     ActivityComponent,
     SecurityComponent
   ],
+
   imports: [
     CommonModule,
     SharedModule,
-    RouterModule.forChild(accountRoutes)
+    RouterModule
   ],
+
   exports: [
     AccountComponent,
     ProfileComponent,
@@ -53,4 +46,5 @@ const accountRoutes: Routes = [
     RouterModule
   ]
 })
+
 export class AccountModule {}

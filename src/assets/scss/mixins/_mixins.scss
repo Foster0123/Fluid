@@ -1,11 +1,13 @@
+@use './../variables';
+
 @mixin scrollbar-default {
 	scrollbar-width: thin;
 	&::-webkit-scrollbar {
 		width: 5px;
 		border-radius: 10px;
-		background-color: black;
+		background-color: var(--default-fg-color);
 		&-thumb {
-			background-color: gray;
+			background-color: var(--default-bg-color);
 			border-radius: 10px;
 		}
 	}

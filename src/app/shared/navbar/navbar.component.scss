@@ -13,9 +13,7 @@
     padding: 5px 0;
     background-color: var(--default-bg-color);
     width: 100%;
-    margin-bottom: 5px;
     border: none;
-    box-shadow: 0 0 5px var(--default-fg-color);
     z-index: 20;
     grid-area: app-navbar;
     position: relative;
@@ -26,6 +24,7 @@
     display: flex;
     align-items: center;
     color: inherit;
+
     a {
         color: white;
         display: flex;
@@ -34,15 +33,17 @@
         justify-content: center;
         align-items: center;
         color: inherit;
+
         header {
             font-size: 1.7em;
             font-weight: bolder;
             margin: 10px 0;
-            
+
         }
+
         .navbar-logo {
             width: 40px;
-            height: 40px!important;
+            height: 40px !important;
         }
     }
 }
@@ -60,7 +61,6 @@
     margin-right: 110px;
     list-style-type: none;
     z-index: 2;
-    background-color: var(--default-bg-color);
 }
 
 .navbar-button-section {
@@ -77,21 +77,24 @@
     z-index: 5;
     transform: translate(-50%, -50%);
     grid-template-columns: none;
+
     .user-icon {
         height: 40px;
         width: 40px;
         border: none;
+
         #profile-pic {
             width: 100%;
             height: 100%;
             cursor: pointer;
             border-radius: 50%;
 
-            background-color: var(--default-fg-color);
+            background-color: rgba(0, 0, 0, 0.85);
             transition: box-shadow, border 200ms ease-in-out;
+
             &:hover {
                 box-shadow: 0 0 10px var(--navbar-link-colors);
-                transition: box-shadow , 200ms ease-in-out;
+                transition: box-shadow, 200ms ease-in-out;
             }
         }
     }
@@ -109,9 +112,9 @@
             cursor: pointer;
             color: var(--default-fg-color);
             transition: color, background-color, 200ms ease-out;
+
             &:hover {
-                color: white;
-                background-color: var(--default-fg-color);
+                background-color: var(--default-bg-color);
                 transition: color, background-color, 200ms ease-out;
             }
         }
@@ -121,13 +124,14 @@
 .navlink {
     margin: 5px 2.5px 5px 2.5px;
     border-radius: 100px;
+
     a {
         display: flex;
         align-items: center;
         justify-content: center;
         border-radius: 100px;
         padding: 10px 15px 10px 15px;
-        transition:background-color, box-shadow, 150ms ease-in-out;
+        transition: background-color, box-shadow, 150ms ease-in-out;
         font-size: 1.1em;
         color: var(--default-fg-color);
         text-decoration: none;
@@ -136,7 +140,7 @@
         font-family: 'Roboto', monospace;
 
         &:hover {
-            transition:background-color, box-shadow, 150ms ease-in-out;
+            transition: background-color, box-shadow, 150ms ease-in-out;
             box-shadow: 0 0 5px var(--default-fg-color);
             color: var(--default-bg-color);
             background-color: var(--default-fg-color);
@@ -168,6 +172,7 @@
         top: 32px;
         right: -25px;
         grid-template-columns: 40px 40px;
+        color: var(--default-fg-color);
         .nav-menu {
             display: inline-block;
         }
@@ -177,7 +182,6 @@
         top: 5px;
         display: none;
         width: 100%;
-        background-color: var(--navbar-bg-color);
         position: relative;
         top: 5px;
 
@@ -192,6 +196,7 @@
     .navlink {
         width: 95%;
         text-align: center;
+
         a {
 
             justify-content: center;

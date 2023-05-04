@@ -1,0 +1,20 @@
+<nav class="account-sidebar">
+	<section class="header-section">
+		<header class="sidebar-header">
+			<i class="fa-solid fa-gears"></i>
+			<h3>Settings</h3>
+			<button type="button">
+			<i class="bi bi-layout-sidebar"></i>
+		</button>
+		</header>	
+		
+	</section>
+	<ul class="sidebar-list">
+		<li *ngFor="let item of sidebarRoutes">
+			<a routerLink="/account{{item.path}}">
+				<i class="{{item.icon}}"></i>
+				<p>{{ item.name }}</p>
+			</a>
+		</li>
+	</ul>
+</nav>

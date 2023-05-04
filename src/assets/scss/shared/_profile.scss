@@ -1,5 +1,4 @@
-@use './../../../../assets/scss/variables';
-@use './../../../../assets/scss/mixins/mixins' as mix;
+@use './../mixins/mixins' as mix;
 
 .profile-section {
 	display: flex;
@@ -81,11 +80,11 @@
 		}
 	}
 }
-.account_submit_btn {
+.account_submit_btn_section {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	.account_general_submit_btn {
+	.account_submit_btn {
 		min-width: 100px;
 		padding: 5px;
 		font-size: 18px;
@@ -95,7 +94,8 @@
 		background: none;
 		border:none;
 		outline: none;
-		border-radius: 5px;
-		background-color: var(--default-fg-color);
+		cursor: pointer;
+		border-radius: 50px;
+		background-color: var(--accent-color);
 	}
 }

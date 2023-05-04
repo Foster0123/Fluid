@@ -1,35 +1,40 @@
+// Core Modules
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { RouterModule, Routes } from '@angular/router';
 
+// Custom Module
 import { SharedModule } from '../shared/shared.module'; 
 
+// Custom Account Components
+import { AccountComponent } from './account.component';
+import { AccountSidebarComponent } from './sidebar/sidebar.component';
 import { ProfileComponent } from './profile/profile.component';
+import { ChangePasswordComponent } from './change-password/change-password.component';
 import { NotificationComponent } from './notification/notification.component';
+import { ActivityComponent } from './activity/activity.component';
+import { SecurityComponent } from './security/security.component';
+import { DangerComponent } from './danger/danger.component';
 
-import { NavbarComponent } from '../shared/navbar/navbar.component';
-import { AccountSidebarComponent } from './account-sidebar/account-sidebar.component';
-import { AccountContainerComponent } from './account-container/account-container.component';
-
-
-const accountRoutes : Routes = [
-  { 
-    path: "account", 
-    component: AccountContainerComponent,
-    children: [
-      { path: "profile", component: ProfileComponent },
-      { path: "notification", component: NotificationComponent },
-    ]
-  }
-  
+const accountRoutes: Routes = [
+  { path: "", component: ProfileComponent },
+  { path: "change-password", component: ChangePasswordComponent },
+  { path: "notifications", component: NotificationComponent },
+  { path: "activity", component: ActivityComponent },
+  { path: "security", component: SecurityComponent },
+  { path: "danger", component: DangerComponent }
 ]
 
 @NgModule({
   declarations: [
+    AccountComponent,
     ProfileComponent,
     NotificationComponent,
     AccountSidebarComponent,
-    AccountContainerComponent
+    ChangePasswordComponent,
+    DangerComponent,
+    ActivityComponent,
+    SecurityComponent
   ],
   imports: [
     CommonModule,
@@ -37,9 +42,15 @@ const accountRoutes : Routes = [
     RouterModule.forChild(accountRoutes)
   ],
   exports: [
-    AccountContainerComponent,
-    NavbarComponent,
+    AccountComponent,
+    ProfileComponent,
+    NotificationComponent,
+    AccountSidebarComponent,
+    ChangePasswordComponent,
+    DangerComponent,
+    ActivityComponent,
+    SecurityComponent,
     RouterModule
   ]
 })
-export class AccountModule { }
+export class AccountModule {}

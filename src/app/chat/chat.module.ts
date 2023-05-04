@@ -2,14 +2,14 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ChatSidebarComponent } from './chat-sidebar/chat-sidebar.component';
-import { ChatContainerComponent } from './chat-container/chat-container.component';
+import { ChatComponent } from './chat.component';
 import { ChatPreviewComponent } from './chat-preview/chat-preview.component';
 import { SharedModule } from '../shared/shared.module';
 
 @NgModule({
   declarations: [
+    ChatComponent,
     ChatSidebarComponent,
-    ChatContainerComponent,
     ChatPreviewComponent
   ],
   imports: [
@@ -17,8 +17,8 @@ import { SharedModule } from '../shared/shared.module';
     SharedModule
   ],
   exports: [
+    ChatComponent,
     ChatSidebarComponent,
-    ChatContainerComponent,
     ChatPreviewComponent
   ]
 })

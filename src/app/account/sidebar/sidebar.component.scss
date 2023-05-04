@@ -69,10 +69,11 @@
 		grid-gap: 5px;
 		margin-bottom: 5px;
 		grid-template-columns: 25px 1fr;
-		transition: background-color, 100ms ease-in;
+		transition: color, background-color, 100ms ease-in;
 
 		&:hover {
-			transition: background-color, 100ms ease-in;
+			transition: color, background-color, 100ms ease-in;
+			color: white;
 			background-color: var(--accent-color);
 		}
 

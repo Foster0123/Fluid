@@ -89,7 +89,7 @@
 		padding: 5px;
 		font-size: 18px;
 		font-weight: bold;
-		color: var(--default-bg-color);
+		color: whitesmoke;
 		font-family: "Open Sans", sans-serif;
 		background: none;
 		border:none;
@@ -97,5 +97,10 @@
 		cursor: pointer;
 		border-radius: 50px;
 		background-color: var(--accent-color);
+		transition: box-shadow, 200ms ease-in;
+		&:hover {
+			transition: box-shadow, 200ms ease-in;
+			box-shadow: 0 0 10px var(--accent-color);
+		}
 	}
 }

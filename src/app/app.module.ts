@@ -9,7 +9,6 @@ import { SharedModule } from './shared/shared.module';
 import { ChatModule } from './chat/chat.module';
 import { SingleModule } from './single/single.module';
 import { AccountModule } from './account/account.module';
-
 // Custom Components
 
 //  --> Root Component

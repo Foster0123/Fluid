@@ -131,19 +131,17 @@
         justify-content: center;
         border-radius: 100px;
         padding: 10px 15px 10px 15px;
-        transition: background-color, box-shadow, 150ms ease-in-out;
+        transition: box-shadow, 150ms ease-in-out;
         font-size: 1.1em;
-        color: var(--default-fg-color);
+        color: var(--accent-color);
         text-decoration: none;
-
         font-weight: bold;
         font-family: 'Roboto', monospace;
 
         &:hover {
-            transition: background-color, box-shadow, 150ms ease-in-out;
-            box-shadow: 0 0 5px var(--default-fg-color);
-            color: var(--default-bg-color);
-            background-color: var(--default-fg-color);
+            transition: box-shadow, 150ms ease-in-out;
+            box-shadow: 0 0 10px var(--accent-color);
+            color: var(--accent-color);
         }
 
         i {

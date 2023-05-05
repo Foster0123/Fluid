@@ -15,6 +15,7 @@ import { NotificationComponent } from './notification/notification.component';
 import { ActivityComponent } from './activity/activity.component';
 import { SecurityComponent } from './security/security.component';
 import { DangerComponent } from './danger/danger.component';
+import { DevicesComponent } from './devices/devices.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { DangerComponent } from './danger/danger.component';
     ChangePasswordComponent,
     DangerComponent,
     ActivityComponent,
-    SecurityComponent
+    SecurityComponent,
+    DevicesComponent
   ],
 
   imports: [

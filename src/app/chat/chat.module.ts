@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { PickerModule } from '@ctrl/ngx-emoji-mart';
 
 import { ChatSidebarComponent } from './chat-sidebar/chat-sidebar.component';
 import { ChatComponent } from './chat.component';
@@ -14,7 +15,8 @@ import { SharedModule } from '../shared/shared.module';
   ],
   imports: [
     CommonModule,
-    SharedModule
+    SharedModule,
+    PickerModule
   ],
   exports: [
     ChatComponent,

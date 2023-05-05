@@ -144,3 +144,15 @@ button {
         }
     }
 }
+
+.msg-input-button-section {
+    position: relative;
+}
+.msg-input-emoji-section {
+    position: absolute;
+    bottom: 50px;
+    right: -35px;
+}
+.emoji-mart-scroll {
+    @include mix.scrollbar(5px , blue ,red, 10px);
+}

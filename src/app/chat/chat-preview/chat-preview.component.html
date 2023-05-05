@@ -170,9 +170,14 @@
                     <div class="editable-input" contenteditable></div>
                 </div>
                 <div class="input-right">
-                    <button class="msg-input-button" type="button">
-                        <i class="fa-solid fa-smile"></i>
-                    </button>
+                    <section class="msg-input-button-section">
+                        <button class="msg-input-button" type="button">
+                            <i class="fa-solid fa-smile"></i>
+                        </button>
+                        <section class="msg-input-emoji-section">
+                            <emoji-mart [showPreview]="false" title="Pick your emoji…" emoji="point_up"></emoji-mart>
+                        </section>
+                    </section>
                     <button class="msg-input-button" type="button">
                         <i class="fa-solid fa-paper-plane"></i>
                     </button>

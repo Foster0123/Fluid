@@ -25,7 +25,7 @@
 	padding: 5px;
 	background-color: var(--default-bg-color);
 	color: var(--default-fg-color);
-	@include mix.scrollbar-default;
+	@include mix.scrollbar(5px , var(--default-bg-color), var(--default-fg-color), 5px);
 }
 
 @media (max-width: 800px) {
@@ -35,8 +35,5 @@
 			"account-previewer account-previewer"
 		;
 		grid-gap: 0px;
-	}
-	.account-previewer {
-		margin-top: 4px;
 	}
 }

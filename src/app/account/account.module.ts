@@ -27,7 +27,7 @@ import { DevicesComponent } from './devices/devices.component';
     DangerComponent,
     ActivityComponent,
     SecurityComponent,
-    DevicesComponent
+    DevicesComponent,
   ],
 
   imports: [

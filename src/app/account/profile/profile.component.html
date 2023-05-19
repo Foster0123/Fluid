@@ -3,33 +3,56 @@
 		<section class="profile-header">
 			<h3>User's Profile</h3>
 		</section>
-		<section class="profile-image-section">
-			<section class="profile-image">
-				<img src="./assets/images/user.png" alt="User Image">
-				<span class="profile_dropdown"></span>
-				<label for="profile_image" class="profile-label">
-					<i class="bi bi-camera2"></i>
-				</label>
-				<input type="file" id="profile_image" name="profile_image">
+		<form action="" method="POST" class="account-profile-form">
+			<section class="profile-image-section">
+				<section class="profile-image">
+					<img src="./assets/images/user.png" alt="User Image">
+					<span class="profile_dropdown"></span>
+					<label for="profile_image" class="profile-label">
+						<i class="bi bi-camera2"></i>
+					</label>
+					<input type="file" id="profile_image" name="profile_image">
+				</section>
 			</section>
-		</section>
-		<section class="profile-content">
-			<label for="account_fname">Name</label>
-			<input class="account_input" placeholder="Name" type="text" id="account_fname" name="account_fname">
-		</section>
-		<section class="profile-content">
-			<label for="account_fname">Username</label>
-			<input class="account_input" placeholder="Username" type="text" id="account_uname" name="account_fname">
-		</section>
-		<section class="profile-content">
-			<label for="account_fname">Email</label>
-			<input class="account_input" placeholder="Email" type="text" id="account_fname" name="account_email">
-		</section>
-		<section class="profile-content">
-			<label for="account_fname">Bio</label>
-			<textarea rows="5" class="account_input" placeholder="Bio" type="text" id="account_fname" name="account_fname"></textarea>
-		</section>
-		<section class="account_submit_btn_section">
-			<button type="submit" class="account_submit_btn">Submit</button>
-		</section>
+			
+			<section class="profile-content">
+				<label for="account_fname">Name</label>
+				<section class="account-input-section">
+					<span class="account-input-left">
+						<i class="bi bi-person"></i>
+					</span>
+					<input class="account_input" placeholder="Name" type="text" id="account_fname" name="account_fname">
+				</section>
+			</section>
+			<section class="profile-content">
+				<label for="account_fname">Username</label>
+				<section class="account-input-section">
+					<span class="account-input-left">
+						<i class="bi bi-person-circle"></i>
+					</span>
+					<input class="account_input" placeholder="Username" type="text" id="account_uname" name="account_uname">
+				</section>
+			</section>
+			<section class="profile-content">
+				<label for="account_fname">Email</label>
+				<section class="account-input-section">
+					<span class="account-input-left">
+						<i class="bi bi-envelope"></i>
+					</span>
+					<input class="account_input" placeholder="Email" type="text" id="account_fname" name="account_email" />
+				</section>
+			</section>
+			<section class="profile-content">
+				<label for="account_bio">Bio</label>
+				<section class="account-textarea-section">
+					<span class="account-input-left">
+						<i class="bi bi-text-paragraph"></i>
+					</span>
+					<textarea rows="5" class="account_input" placeholder="Bio" type="text" id="account_bio" name="account_bio"></textarea>
+				</section>
+			</section>
+			<section class="account_submit_btn_section">
+				<button type="submit" class="account_submit_btn">Submit</button>
+			</section>
+		</form>
 	</div>

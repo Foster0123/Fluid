@@ -12,7 +12,7 @@ export class AccountSidebarComponent {
         { name: "Notifications", path: "/notifications", icon: "bi bi-bell" },
         { name: "Activity", path: "/activity", icon: "bi bi-activity" },
         { name: "Security", path: "/security", icon: "bi bi-shield" },
-        { name: "Devices", path: "/devices", icon: "fa-solid fa-computer" },
+        { name: "Devices", path: "/devices", icon: "bx bx-devices"},
         { name: "Danger", path: "/danger", icon: "bi bi-exclamation-circle" },
 
     ]

@@ -17,6 +17,7 @@ import { SecurityComponent } from './security/security.component';
 import { DangerComponent } from './danger/danger.component';
 import { DevicesComponent } from './devices/devices.component';
 
+
 @NgModule({
   declarations: [
     AccountComponent,
@@ -33,18 +34,6 @@ import { DevicesComponent } from './devices/devices.component';
   imports: [
     CommonModule,
     SharedModule,
-    RouterModule
-  ],
-
-  exports: [
-    AccountComponent,
-    ProfileComponent,
-    NotificationComponent,
-    AccountSidebarComponent,
-    ChangePasswordComponent,
-    DangerComponent,
-    ActivityComponent,
-    SecurityComponent,
     RouterModule
   ]
 })
